@@ -1,0 +1,199 @@
+/*
+  ADD YOUR EXTRA STYLES HERE!
+*/
+
+article h1,
+article h2,
+article h3,
+article h4 {
+  color: #48355B;
+}
+
+#logo {
+  max-height: 119px;
+}
+
+.title {
+  pointer-events: none;
+}
+
+.table .trow {
+    width: 100%;
+}
+
+.table .trow .tcol {
+  padding: 0.3rem 0.4rem 0.3rem;
+  font-size: 1.3125rem; 
+  color: #48355B;
+}
+
+.table .trow .tcol.first {
+    float:left;
+    padding-left: 0;
+}
+
+.table .trow .tcol.last {
+    float:right;
+    padding-right: 0;
+}
+
+.table .trow .tcol.adjust {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.table .trow .tcol.limit {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.table.table-striped .trow:nth-child(2n) {
+    background-color: #f2f2f2;
+}
+
+.table .label {
+  display: inline;
+}
+
+.table .button {
+  display: inline;
+  margin: 0 0px;
+  padding: 0.4em 0.4em;
+  font-size: 1.0rem;
+}
+
+.gray-button,
+.gray-button:hover {
+  background-color: #5e5e5e;
+  color: white;
+  box-shadow: none;
+  cursor: default;
+  width: 80px;
+}
+
+.yellow-button,
+.yellow-button:hover {
+  background-color: #f9e52e;
+  color: #48355B;
+  box-shadow: none;
+  cursor: default;
+  width: 80px;
+}
+
+.lightblue-button,
+.lightblue-button:hover {
+  background-color: #00b7f7;
+  color: white;
+  box-shadow: none;
+  cursor: default;
+  width: 80px;
+}
+
+.darkblue-button,
+.darkblue-button:hover {
+  background-color: #231868;
+  color: white;
+  box-shadow: none;
+  cursor: default;
+  width: 80px;
+}
+
+.blue-button,
+.blue-button:hover {
+  background-color: #2e61f9;
+  color: white;
+  box-shadow: none;
+  cursor: default;
+  width: 80px;
+}
+
+.green-button,
+.green-button:hover {
+  background-color: #1EC095;
+  color: white;
+  box-shadow: none;
+  cursor: default;
+  width: 80px;
+}
+
+.orange-button,
+.orange-button:hover {
+  background-color: #f29422;
+  color: white;
+  box-shadow: none;
+  cursor: default;
+  width: 80px;
+}
+
+.red-button,
+.red-button:hover {
+  background-color: #e42929;
+  color: white;
+  box-shadow: none;
+  cursor: default;
+  width: 80px;
+}
+
+.purple-button,
+.purple-button:hover {
+  background-color: #e429b5;
+  color: white;
+  box-shadow: none;
+  cursor: default;
+  width: 80px;
+}
+
+.brown-button,
+.brown-button:hover {
+  background-color: #7e2e2e;
+  color: white;
+  box-shadow: none;
+  cursor: default;
+  width: 80px;
+}
+
+.darkgreen-button,
+.darkgreen-button:hover {
+  background-color: #2e7e73;
+  color: white;
+  box-shadow: none;
+  cursor: default;
+  width: 80px;
+}
+
+.table .link {
+  color: unset;
+}
+.table .link:hover {
+  color: unset;
+  text-decoration: underline;
+}
+
+.width-100 {
+  width: 100px;
+}
+
+.width-20 {
+  width: 20px;
+}
+
+hr.spacer {
+  border: 3px solid rgba(255, 255, 255, 0);
+}
+
+.tiny-button {
+  padding: 0.3rem 0.6rem;
+  margin: 5px 2px;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .xxx {
+    float: left !important;
+    width: 100%;
+  }
+}
