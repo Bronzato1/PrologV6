@@ -192,8 +192,7 @@ hr.spacer {
   .hide-on-mobile {
     display: none;
   }
-  .xxx {
-    float: left !important;
+  .width-100-on-mobile {
     width: 100%;
   }
 }
