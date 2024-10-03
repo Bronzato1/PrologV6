@@ -213,10 +213,12 @@ section#links img {
 
   .h2, h2 {
     font-size: 2rem;
-    
+  }
+
   .hide-on-mobile {
     display: none;
   }
+  
   .width-100-on-mobile {
     width: 100%;
   }
