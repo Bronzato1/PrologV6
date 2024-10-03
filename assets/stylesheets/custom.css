@@ -210,10 +210,19 @@ section#links img {
 }
 
 @media only screen and (max-width: 800px) {
+
   .hide-on-mobile {
     display: none;
   }
   .width-100-on-mobile {
     width: 100%;
   }
+
+  section#links img {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 20%;
+  }
+
 }
