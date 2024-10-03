@@ -2,6 +2,15 @@
   ADD YOUR EXTRA STYLES HERE!
 */
 
+@font-face {
+  font-family: "Pastel";
+  src: url('../fonts/PastelCrayon.ttf') format('truetype');
+}
+
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
+  font-family: "Pastel", "Raleway", Arial, sans-serif;
+}
+
 article h1,
 article h2,
 article h3,
@@ -186,6 +195,18 @@ hr.spacer {
   padding: 0.3rem 0.6rem;
   margin: 5px 2px;
   font-size: 1rem;
+}
+
+section#links {
+  text-align: center; 
+  display: block;
+}
+
+section#links img {
+  display: inline-block;
+  margin-left: 50px; 
+  margin-right: 50px; 
+  width: 10%;
 }
 
 @media only screen and (max-width: 800px) {
