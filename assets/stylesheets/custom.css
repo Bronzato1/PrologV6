@@ -98,16 +98,16 @@ article h4 {
   color: white;
   box-shadow: none;
   cursor: default;
-  width: 80px;
+  /* width: 80px; */
 }
 
 .yellow-button,
 .yellow-button:hover {
-  background-color: #f9e52e;
+  background-color: #FF9F1C;
   color: #48355B;
   box-shadow: none;
   cursor: default;
-  width: 80px;
+  /* width: 80px; */
 }
 
 .lightblue-button,
@@ -116,7 +116,7 @@ article h4 {
   color: white;
   box-shadow: none;
   cursor: default;
-  width: 80px;
+  /* width: 80px; */
 }
 
 .darkblue-button,
@@ -125,7 +125,7 @@ article h4 {
   color: white;
   box-shadow: none;
   cursor: default;
-  width: 80px;
+  /* width: 80px; */
 }
 
 .blue-button,
@@ -134,7 +134,7 @@ article h4 {
   color: white;
   box-shadow: none;
   cursor: default;
-  width: 80px;
+  /* width: 80px; */
 }
 
 .green-button,
@@ -143,7 +143,7 @@ article h4 {
   color: white;
   box-shadow: none;
   cursor: default;
-  width: 80px;
+  /* width: 80px; */
 }
 
 .orange-button,
@@ -152,7 +152,7 @@ article h4 {
   color: white;
   box-shadow: none;
   cursor: default;
-  width: 80px;
+  /* width: 80px; */
 }
 
 .red-button,
@@ -161,7 +161,7 @@ article h4 {
   color: white;
   box-shadow: none;
   cursor: default;
-  width: 80px;
+  /* width: 80px; */
 }
 
 .purple-button,
@@ -170,7 +170,7 @@ article h4 {
   color: white;
   box-shadow: none;
   cursor: default;
-  width: 80px;
+  /* width: 80px; */
 }
 
 .brown-button,
@@ -179,7 +179,7 @@ article h4 {
   color: white;
   box-shadow: none;
   cursor: default;
-  width: 80px;
+  /* width: 80px; */
 }
 
 .darkgreen-button,
@@ -188,7 +188,7 @@ article h4 {
   color: white;
   box-shadow: none;
   cursor: default;
-  width: 80px;
+  /* width: 80px; */
 }
 
 .table .link {
@@ -238,7 +238,6 @@ html {
   width: 100%;
   height: 500px;
   writing-mode: vertical-lr;
-  color: #ffffff;
   background-color: #48355B;
 }
 
@@ -265,14 +264,16 @@ html {
   font-size: 16vh;
   margin-top: 3vh; */
 }
-.masonry p {
+.masonry p,
+.masonry a {
   text-align: center;
   line-height: 22px;
   margin-bottom: 0;
   font-weight: 900;
   font-size: 18px;
   font-family: 'CarterOne';
-  /* font-family: 'CarterOne', cursive; font-size: 3.5vh; */
+  color: inherit;
+  cursor: pointer;
 }
 .masonry li:nth-child(3n+2){
   background-color: #FF9F1C;
@@ -298,6 +299,16 @@ html {
 .masonry .span6 { grid-row-end: span 6; }
 
 .masonry .height2 { grid-column-end: span 2; }
+
+.masonry li:hover {
+  background-color: #48355B;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
 
  @media (max-height:500px) {
    ul {
