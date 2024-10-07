@@ -13,6 +13,7 @@ body {
 
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
   font-family: "CarterOne", "Raleway", Arial, sans-serif;
+  color: unset;
 }
 
 #main-footer.purple {
@@ -97,8 +98,6 @@ article h4 {
   background-color: #5e5e5e;
   color: white;
   box-shadow: none;
-  cursor: default;
-  /* width: 80px; */
 }
 
 .yellow-button,
@@ -106,89 +105,69 @@ article h4 {
   background-color: #FF9F1C;
   color: #48355B;
   box-shadow: none;
-  cursor: default;
-  /* width: 80px; */
 }
 
 .lightblue-button,
 .lightblue-button:hover {
-  background-color: #00b7f7;
+  background-color: #00b7f7 !important;
   color: white;
   box-shadow: none;
-  cursor: default;
-  /* width: 80px; */
 }
 
 .darkblue-button,
 .darkblue-button:hover {
-  background-color: #231868;
+  background-color: #231868 !important;
   color: white;
   box-shadow: none;
-  cursor: default;
-  /* width: 80px; */
 }
 
 .blue-button,
 .blue-button:hover {
-  background-color: #2e61f9;
+  background-color: #2e61f9 !important;
   color: white;
   box-shadow: none;
-  cursor: default;
-  /* width: 80px; */
 }
 
 .green-button,
 .green-button:hover {
-  background-color: #1EC095;
+  background-color: #1EC095 !important;
   color: white;
   box-shadow: none;
-  cursor: default;
-  /* width: 80px; */
 }
 
 .orange-button,
 .orange-button:hover {
-  background-color: #f29422;
+  background-color: #f29422 !important;
   color: white;
   box-shadow: none;
-  cursor: default;
-  /* width: 80px; */
 }
 
 .red-button,
 .red-button:hover {
-  background-color: #e42929;
+  background-color: #e42929 !important;
   color: white;
   box-shadow: none;
-  cursor: default;
-  /* width: 80px; */
 }
 
 .purple-button,
 .purple-button:hover {
-  background-color: #e429b5;
+  background-color: #e429b5 !important;
   color: white;
   box-shadow: none;
-  cursor: default;
-  /* width: 80px; */
 }
 
 .brown-button,
 .brown-button:hover {
-  background-color: #7e2e2e;
+  background-color: #7e2e2e !important;
   color: white;
   box-shadow: none;
-  cursor: default;
-  /* width: 80px; */
 }
 
 .darkgreen-button,
 .darkgreen-button:hover {
-  background-color: #2e7e73;
+  background-color: #2e7e73 !important;
   color: white;
   box-shadow: none;
-  cursor: default;
-  /* width: 80px; */
 }
 
 .table .link {
@@ -196,7 +175,7 @@ article h4 {
 }
 .table .link:hover {
   color: unset;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .width-100 {
@@ -213,7 +192,7 @@ hr.spacer {
 
 .tiny-button {
   padding: 0.3rem 0.6rem;
-  margin: 5px 2px;
+  margin: 2px 0px;
   font-size: 1rem;
 }
 
@@ -257,6 +236,7 @@ html {
   justify-content: center;
   align-items: center;
   padding: 2vh;
+  cursor: pointer;
 }
 .masonry h1 {
   font-family: 'CarterOne';
@@ -273,7 +253,6 @@ html {
   font-size: 18px;
   font-family: 'CarterOne';
   color: inherit;
-  cursor: pointer;
 }
 .masonry li:nth-child(3n+2){
   background-color: #FF9F1C;
@@ -287,10 +266,6 @@ html {
   background-color: #2EC4B6;
   color: #48355B;
 }
-.masonry li.white {
-  background-color: #fff;
-  color: #48355B;
-}
 
 .masonry .span2 { grid-row-end: span 2; }
 .masonry .span3 { grid-row-end: span 3; }
@@ -299,10 +274,11 @@ html {
 .masonry .span6 { grid-row-end: span 6; }
 
 .masonry .height2 { grid-column-end: span 2; }
+.masonry .height3 { grid-column-end: span 3; }
 
 .masonry li:hover {
-  background-color: #48355B;
-  color: #fff;
+  background-color: #48355B !important;
+  color: #fff !important;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
