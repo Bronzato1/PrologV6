@@ -332,3 +332,14 @@ html {
   }
 
 }
+
+.rocket {
+  width: 220px;
+}
+.main-footer a {
+  color: #48355B;
+  font-weight: bold;
+}
+.main-footer img {
+  width: 40px;
+}
