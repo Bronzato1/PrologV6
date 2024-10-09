@@ -180,8 +180,8 @@ hr.spacer {
 }
 
 .tiny-button {
-  padding: 0.3rem 0.6rem;
-  margin: 2px 0px;
+  padding: 0.3rem 0.4rem 0.3rem;
+  margin: 2px 2px;
   font-size: 1rem;
 }
 
@@ -212,7 +212,7 @@ html {
 
 .masonry ul {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 6px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: 14vh;
   grid-auto-flow: dense;
@@ -342,4 +342,25 @@ html {
 }
 .main-footer img {
   width: 40px;
+}
+
+.picture-profile {
+  border: 2px solid #48355B;
+  -webkit-transition: background-color 0.25s ease-out;
+  -moz-transition: background-color 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+}
+
+.picture-profile:hover {
+  background-color: #48355B;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  flex-grow: 1;
 }
