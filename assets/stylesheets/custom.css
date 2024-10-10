@@ -230,6 +230,14 @@ html {
   cursor: pointer;
   border: 2px solid #48355B;
 }
+
+.masonry li.pic-profile {
+  padding:0;
+  align-items: flex-end;
+  display: flex;
+  background-color: #48355B;
+}
+
 .masonry h1 {
   font-family: 'CarterOne';
   /* 
@@ -269,6 +277,7 @@ html {
 
 .masonry .height2 { grid-column-end: span 2; }
 .masonry .height3 { grid-column-end: span 3; }
+.masonry .height4 { grid-column-end: span 4; }
 
 .masonry li:hover {
   background-color: #48355B !important;
@@ -345,18 +354,11 @@ html {
 }
 
 .picture-profile {
-  border: 2px solid #48355B;
-  -webkit-transition: background-color 0.25s ease-out;
-  -moz-transition: background-color 0.25s ease-out;
-  -o-transition: background-color 0.25s ease-out;
-  transition: background-color 0.25s ease-out;
-}
-
-.picture-profile:hover {
-  background-color: #48355B;
+    /* border: 2px solid #48355B; */
 }
 
 .grid {
+  /* position: relative; */
   display: flex;
   flex-wrap: wrap;
 }
