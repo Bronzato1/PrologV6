@@ -172,59 +172,571 @@
       <hr class="spacer">
       <div class="row">
         <div class="small-16 columns width-100-on-mobile grid">
-          <a class="button hollow-button tiny-button grid-item" href="#/">C#</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">ASP.NET</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">MVC</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">WEB API</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">RAZOR</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">BLAZOR</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">.NET CORE</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">IIS</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">SQL SERVER</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">HTML</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">CSS/SCSS</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">JAVASCRIPT</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">TYPESCRIPT</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">JQUERY</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">AJAX</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">GULP</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">TFS</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">AZURE</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">AURELIA</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">ANGULAR</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">VISUAL STUDIO</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">ENTITY FRAMEWORK</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">OKTA</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">MESSAGE QUEUING</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">PROGRESSIVE WEB APPS</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">ARCHITECTURE DESIGN</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">DATA VISUALIZATION</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">API MANAGEMENT</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">DEPENDENCY INJECTION</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">AZURE ACTIVE DIRECTORY</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">AGILE</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">ENTERPRISE RESOURCE PLANNING</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">EVENT DRIVEN</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">CONTINUOUS DEPLOYMENT</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">LINQ</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">ASYNCHRONOUS</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">DESIGN PATTERN</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">MICROSERVICES</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">CONTAINERS</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">DOCKER</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">CI/CD PIPELINES</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">PERFORMANCE TUNING</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">SIGNALR</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">WEB FORMS</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">POWERSHELL</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">CACHING</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">MAUI</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">KUBERNETES</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">AZURE COGNITIVE SERVICES</a>
-          <a class="button hollow-button tiny-button grid-item" href="#/">USER INTERFACE DESIGN</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-c-sharp">C#</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-asp-net">ASP.NET</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-mvc">MVC</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-web-api">WEB API</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-razor">RAZOR</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-blazor">BLAZOR</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-dot-net-core">.NET CORE</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-iis">IIS</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-sql-server">SQL SERVER</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-html">HTML</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-css">CSS</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-scss">SCSS</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-javascript">JAVASCRIPT</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-typescript">TYPESCRIPT</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-jquery">JQUERY</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-ajax">AJAX</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-gulp">GULP</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-tfs">TFS</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-azure">AZURE</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-aurelia">AURELIA</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-angular">ANGULAR</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-visual-studio">VISUAL STUDIO</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-entity-framework">ENTITY FRAMEWORK</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-okta">OKTA</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-message-queuing">MESSAGE QUEUING</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-progressive-web-apps">PROGRESSIVE WEB APPS</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-architecture-design">ARCHITECTURE DESIGN</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-data-visualization">DATA VISUALIZATION</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-api-management">API MANAGEMENT</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-dependency-injection">DEPENDENCY INJECTION</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-azure-active-directory">AZURE ACTIVE DIRECTORY</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-agile">AGILE</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-enterprise-resource-planning">ENTERPRISE RESOURCE PLANNING</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-event-driven">EVENT DRIVEN</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-continuous-deployment">CONTINUOUS DEPLOYMENT</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-linq">LINQ</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-asynchronous">ASYNCHRONOUS</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-design-pattern">DESIGN PATTERN</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-microservices">MICROSERVICES</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-containers">CONTAINERS</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-docker">DOCKER</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-ci-cd-pipelines">CI/CD PIPELINES</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-performance-tuning">PERFORMANCE TUNING</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-signalr">SIGNALR</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-web-forms">WEB FORMS</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-powershell">POWERSHELL</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-caching">CACHING</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-maui">MAUI</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-kubernetes">KUBERNETES</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-azure-cognitive-services">AZURE COGNITIVE SERVICES</a>
+          <a class="button hollow-button tiny-button grid-item" data-open="modal-user-interface-design">USER INTERFACE DESIGN</a>
         </div>
       </div>
     </section>
+
+    <!-- MODAL (C#) -->
+    <div class="reveal small" id="modal-c-sharp" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">C#</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>C# (pronounced "C-sharp") is a modern, object-oriented programming language developed by Microsoft. It's designed for building a wide range of applications, from web and mobile apps to games and enterprise software. It's versatile, powerful, and integrates seamlessly with the .NET framework</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (ASP.NET) -->
+    <div class="reveal small" id="modal-asp-net" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">ASP.NET</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>ASP.NET is an open-source web framework developed by Microsoft for building modern web applications and services. It enables developers to create dynamic web pages, APIs, and real-time applications with the robust .NET platform.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (MVC) -->
+    <div class="reveal small" id="modal-mvc" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">MVC</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>MVC (Model-View-Controller) is a design pattern used in software development. It separates an application into three interconnected components. This separation helps in organizing code and making applications more scalable and maintainable.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (WEB API) -->
+    <div class="reveal small" id="modal-web-api" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">WEB API</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>A Web API (Application Programming Interface) is a tool that allows different software applications to communicate with each other over the web. It enables developers to create HTTP requests and receive responses, making it easier to integrate and exchange data between different systems. Web APIs are essential for building modern web applications, services, and connecting various devices and platforms. They're like the digital glue that holds everything together in the web ecosystem.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (RAZOR) -->
+    <div class="reveal small" id="modal-razor" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">RAZOR</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>Razor is a syntax used in ASP.NET for embedding server-based code into web pages. It allows developers to create dynamic web content by mixing HTML with C# or VB.NET code seamlessly. Razor is known for its simplicity and ease of use, making it a popular choice for building interactive and data-driven web applications. Think of it as the glue that holds your web pages and server-side logic together, allowing for a smooth, dynamic user experience.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (BLAZOR) -->
+    <div class="reveal small" id="modal-blazor" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">BLAZOR</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>Blazor is a web framework developed by Microsoft for building interactive web applications using C#. What makes Blazor stand out is that it allows you to use C# for both client-side and server-side code, rather than JavaScript, creating a more seamless and efficient development process. It leverages WebAssembly to run C# code directly in the browser, providing a highly responsive and dynamic user experience. Whether you're creating a single-page application (SPA) or more complex web apps, Blazor offers a versatile and powerful platform to build on.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (.NET CORE) -->
+    <div class="reveal small" id="modal-dot-net-core" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">.NET CORE</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>.NET Core is an open-source, cross-platform framework developed by Microsoft for building modern applications. Unlike the traditional .NET Framework, which is limited to Windows, .NET Core can run on Windows, macOS, and Linux. It supports a variety of application types, including web, mobile, desktop, cloud, and IoT. .NET Core is known for its performance, flexibility, and ability to work seamlessly with microservices and containerization technologies like Docker. It's the go-to choice for developers looking to build high-performance, scalable, and cross-platform applications.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (IIS) -->
+    <div class="reveal small" id="modal-iis" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">IIS</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>IIS (Internet Information Services) is a flexible, secure, and manageable web server created by Microsoft. It's used to host websites, services, and applications on the web. IIS supports various protocols, including HTTP, HTTPS, FTP, FTPS, and SMTP, making it a versatile choice for handling web traffic. It integrates seamlessly with .NET, making it a powerful tool for deploying ASP.NET applications. It's also known for its scalability and robust features, allowing developers to manage and deploy their web applications efficiently.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (SQL SERVER) -->
+    <div class="reveal small" id="modal-sql-server" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">SQL SERVER</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>SQL Server is a relational database management system (RDBMS) developed by Microsoft. It's used to store and retrieve data as requested by other software applications, whether those applications run on the same computer or on another computer across a network. SQL Server is known for its high performance, scalability, and security features. It supports SQL (Structured Query Language), the standard language for managing and manipulating databases.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (HTML) -->
+    <div class="reveal small" id="modal-html" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">HTML</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>HTML (HyperText Markup Language) is the standard language used to create and structure web pages. It uses a series of elements or tags to define the different parts of a webpage, such as headings, paragraphs, links, images, and other types of content. HTML is the backbone of web development, providing the basic structure that is then enhanced by CSS and JavaScript. If the web were a house, HTML would be the framework holding it all together.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (CSS) -->
+    <div class="reveal small" id="modal-css" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">CSS</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>CSS (Cascading Style Sheets) is a language used for describing the presentation of a document written in HTML or XML. It controls the layout, colors, fonts, and overall visual aesthetics of web pages. CSS helps to make the web visually appealing and user-friendly by separating content from design.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (SCSS) -->
+    <div class="reveal small" id="modal-scss" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">SCSS</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>SCSS (Sassy CSS) is a syntax of SASS (Syntactically Awesome Style Sheets), which is an extension of CSS. It adds more powerful features like variables, nested rules, and mixins, making it easier to write and maintain large stylesheets. SCSS syntax is similar to CSS, so you can start using it without a steep learning curve, but it offers more flexibility and control over the styling process. It's like CSS on steroids, designed to make your life as a web developer much simpler and more efficient.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (JAVASCRIPT) -->
+    <div class="reveal small" id="modal-javascript" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">JAVASCRIPT</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>JavaScript is a versatile, high-level programming language primarily used to create interactive effects within web browsers. It's an essential part of web development, enabling dynamic content, such as interactive forms, animations, and real-time updates. JavaScript is key to modern web experiences, providing the ability to make web pages more engaging and functional. It’s like the magic wand that brings web pages to life.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (TYPESCRIPT) -->
+    <div class="reveal small" id="modal-typescript" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">TYPESCRIPT</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>TypeScript is a superset of JavaScript developed by Microsoft. It adds static typing to the language, which helps developers catch errors early in the development process. TypeScript code is transpiled into plain JavaScript, ensuring compatibility with all existing JavaScript environments. This makes it a powerful tool for building large-scale applications, as it provides robust tooling for error checking, autocomplete, and other development enhancements. Essentially, it's JavaScript with superpowers.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (JQUERY) -->
+    <div class="reveal small" id="modal-jquery" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">JQUERY</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>jQuery is a fast, small, and feature-rich JavaScript library designed to simplify HTML document traversal, event handling, animation, and Ajax interactions. With its easy-to-use API that works across a multitude of browsers, jQuery significantly reduces the complexity of JavaScript programming, making it easier to create dynamic web content. It’s like the Swiss Army knife of JavaScript libraries, helping you do more with less code.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (AJAX) -->
+    <div class="reveal small" id="modal-ajax" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">AJAX</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>AJAX (Asynchronous JavaScript and XML) is a technique used in web development to create asynchronous web applications. It allows web pages to be updated asynchronously by exchanging small amounts of data with the server behind the scenes. This means that parts of a web page can be updated without needing to reload the entire page, resulting in a more dynamic and faster user experience. It's like magic for creating seamless, interactive web applications.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (GULP) -->
+    <div class="reveal small" id="modal-gulp" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">GULP</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>Gulp is a toolkit for automating tasks in your development workflow. Built on Node.js, it streamlines repetitive tasks like minifying files, compiling CSS from Sass, or running tests. By using Gulp, you can improve your productivity, making your development process faster and more efficient. It's like having a super-efficient assistant that takes care of all the mundane tasks for you.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (TFS) -->
+    <div class="reveal small" id="modal-tfs" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">TFS</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>Team Foundation Server (TFS) is a powerful tool developed by Microsoft for managing software development projects. It provides version control, project management, continuous integration, and build automation capabilities. TFS helps teams collaborate more effectively by tracking work items, managing source code, and automating builds and releases. However, it's worth noting that TFS has been rebranded as Azure DevOps Server. This rebranding brings many of the features from the cloud-based Azure DevOps Services to the on-premises server product.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (AZURE) -->
+    <div class="reveal small" id="modal-azure" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">AZURE</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>Azure is Microsoft's cloud computing platform, offering a wide range of services for building, deploying, and managing applications and services through Microsoft-managed data centers.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (AURELIA) -->
+    <div class="reveal small" id="modal-aurelia" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">AURELIA</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>Aurelia is a modern front-end framework for building browser, mobile, and desktop applications. It's a collection of modular JavaScript components that can be used together to create powerful applications. Aurelia is designed to be simple, powerful, and unobtrusive, allowing developers to build components using vanilla JavaScript or TypeScript.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (ANGULAR) -->
+    <div class="reveal small" id="modal-angular" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">ANGULAR</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>Angular is a popular front-end framework for building dynamic web applications. Developed and maintained by Google, it allows developers to use HTML as their template language and extend HTML's syntax to express application components clearly. Angular is known for its robust performance and wide adoption in the development community, making it a go-to choice for scalable and maintainable web applications.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (VISUAL STUDIO) -->
+    <div class="reveal small" id="modal-visual-studio" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">VISUAL STUDIO</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>Visual Studio is an integrated development environment (IDE) created by Microsoft. It's used for developing computer programs, websites, web apps, web services, and mobile apps. With features like intelligent code completion, debugging, and version control, Visual Studio supports various programming languages and is highly customizable. It's like the Swiss Army knife for developers, offering a comprehensive set of tools to streamline the development process from start to finish.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (ENTITY FRAMEWORK) -->
+    <div class="reveal small" id="modal-entity-framework" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">ENTITY FRAMEWORK</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>Entity Framework (EF) is an object-relational mapping (ORM) framework for .NET applications. It allows developers to work with a database using .NET objects, eliminating the need for most of the data-access code. EF simplifies data manipulation by letting you query, insert, update, and delete data using standard .NET syntax. It's like having a translator between your application and your database, making data operations more intuitive and easier to manage. Whether you're working with a new database or an existing one, EF can streamline your data access process, saving you a ton of time and effort.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (OKTA) -->
+    <div class="reveal small" id="modal-okta" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">OKTA</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>Okta is a cloud-based identity and access management service that helps organizations manage and secure user access to various applications and resources. It provides features like single sign-on (SSO), multi-factor authentication (MFA), and user lifecycle management, making it easier for users to securely access multiple applications with one set of credentials. Okta is designed to be flexible and integrates with a wide range of applications and services, ensuring secure and seamless access for employees, customers, and partners.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (MESSAGE QUEUING) -->
+    <div class="reveal small" id="modal-message-queuing" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">MESSAGE QUEUING</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>Message queuing is a method of communication between different parts of a system where messages are placed in a queue and processed asynchronously. This means that the sender and receiver do not need to interact with the message queue at the same time. Message queuing is commonly used in distributed systems, microservices architectures, and serverless computing to enhance communication and workflow management.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (PROGRESSIVE WEB APPS) -->
+    <div class="reveal small" id="modal-progressive-web-apps" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">PROGRESSIVE WEB APPS</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>Progressive Web Apps (PWAs) are web applications that combine the best features of web and mobile apps. They aim to provide an app-like experience directly in a web browser. PWAs offer a seamless, reliable, and engaging experience, making them a popular choice for modern web development. It's like having the best of both web and mobile worlds in one package.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (ARCHITECTURE DESIGN) -->
+    <div class="reveal small" id="modal-architecture-design" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">ARCHITECTURE DESIGN</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>When it comes to architecture design in web development, it's all about creating digital spaces that are both functional and aesthetically pleasing. Think of it as constructing a building online: you need a solid foundation (clean code), functional layouts (user interfaces), and an engaging facade (visual design).</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (DATA VISUALIZATION) -->
+    <div class="reveal small" id="modal-data-visualization" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">DATA VISUALIZATION</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>Data visualization is like translating complex data into visual context, making it easier for people to understand patterns, trends, and insights. Think of it as the architecture of information.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (API MANAGEMENT) -->
+    <div class="reveal small" id="modal-api-management" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">API MANAGEMENT</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>API management is all about efficiently handling the lifecycle of APIs (Application Programming Interfaces). It involves creating, publishing, securing, and monitoring APIs to ensure they work seamlessly across different environments. Think of it as the traffic controller for data exchange between applications, making sure everything flows smoothly and securely.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
+    <!-- MODAL (DEPENDENCY INJECTION) -->
+    <div class="reveal small" id="modal-dependency-injection" data-reveal="" data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="text-center modal-title">DEPENDENCY INJECTION</h2>
+      <div class="row">
+        <div class="small-16 medium-14 medium-centered columns">
+          <hr class="spacer">
+          <p>Dependency injection is a technique in software design that makes a system more flexible and easier to maintain. Instead of having a class create its dependencies, they are provided from the outside. It’s like having a builder on a construction site being handed the exact tools they need, right when they need them, rather than having to search for each one themselves. Keeps everything organized and efficient.</p>
+          <hr class="spacer">
+          <small>AI generated content</small>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 10.054 10.054">
+            <path fill="#78909c" fill-opacity=".406" fill-rule="evenodd" d="M6.732 7.197c-.128 0-.245-.052-.33-.136L5.028 5.687 3.65 7.06c-.083.085-.2.137-.328.137-.257 0-.465-.208-.465-.465 0-.128.052-.245.136-.33L4.37 5.028 2.992 3.65c-.084-.083-.136-.2-.136-.328 0-.257.208-.465.465-.465.13 0 .246.052.33.136L5.027 4.37l1.376-1.377c.084-.084.2-.136.33-.136.256 0 .464.208.464.465 0 .13-.052.245-.136.33L5.686 5.026 7.06 6.403c.085.084.137.2.137.33 0 .256-.208.464-.465.464M5.027.997c-2.225 0-4.03 1.805-4.03 4.03 0 2.226 1.805 4.03 4.03 4.03 2.226 0 4.03-1.804 4.03-4.03 0-2.225-1.804-4.03-4.03-4.03m0 8.99c-2.74 0-4.96-2.22-4.96-4.96 0-2.74 2.22-4.96 4.96-4.96 2.74 0 4.96 2.22 4.96 4.96 0 2.74-2.22 4.96-4.96 4.96" clip-rule="evenodd"></path>
+          </svg></span></button>
+    </div>
+
     <hr class="spacer">
     <hr class="spacer">
     <section id="apps">
