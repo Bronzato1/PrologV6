@@ -7,13 +7,15 @@
   src: url('../fonts/CarterOne-Regular.ttf') format('truetype');
 }
 
-body {
+body,
+.card,
+article h3 {
   color: #48355B;
 }
 
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
   font-family: "CarterOne", "Raleway", Arial, sans-serif;
-  color: unset;
+  color: #48355B;
 }
 
 #main-footer.purple {
