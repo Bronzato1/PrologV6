@@ -91,7 +91,7 @@ article h4 {
 .table .button {
   display: inline;
   margin: 0 0px;
-  padding: 0.4em 0.4em;
+  padding: 0.4em 0.6em 0.4em 0.4em;
   font-size: 1.0rem;
 }
 
@@ -169,6 +169,17 @@ article h4 {
   text-decoration: underline !important;
 }
 
+.table .badge {
+  min-width: 1.5em;
+  padding: 0.0em 0.6em 0.25em 0.6em;
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin: -0.3em -0.0em 0.0em -1em;
+  position: absolute;
+  color: #fff;
+  background-color: #48355b;
+}
+
 .width-100 {
   width: 100px;
 }
@@ -185,6 +196,23 @@ hr.spacer {
   padding: 0.3rem 0.4rem 0.3rem;
   margin: 2px 2px;
   font-size: 1rem;
+}
+
+#single-app .badge {
+  font-weight: 500;
+  display: unset;
+  min-width: 2.1em;
+  padding: 0.0em 0.3rem;
+  border-radius: 16px;
+  font-size: small;
+  text-align: center;
+  background: #E94365;
+  color: #fff;
+  border: 1px solid #48355b;
+  font-family: monospace;
+  margin-left: 5px;
+  background: #48355b;
+  color: #fff;
 }
 
 section#links {
