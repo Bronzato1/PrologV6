@@ -396,3 +396,7 @@ html {
 .grid-item {
   flex-grow: 1;
 }
+
+.copyright {
+  font-size: smaller;
+}
