@@ -400,3 +400,26 @@ html {
 .copyright {
   font-size: smaller;
 }
+
+.callout.success,
+.callout.alert {
+  font-size: 1.3125rem;
+}
+
+.close-button {
+  position: absolute;
+  top: -11px;
+  right: -8px;
+  border: 1px solid #8c8787;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: inherit;
+}
+
+.callout.success .close-button {
+  background-color: #E1FAEA;
+}
+.callout.alert .close-button {
+  background-color: #FBE1E1;
+}
