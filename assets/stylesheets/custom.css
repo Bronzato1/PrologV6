@@ -49,6 +49,11 @@ article h4 {
   pointer-events: none;
 }
 
+.button {
+  border: 2px solid #48355B;
+  border-radius: 6px;
+}
+
 .table .trow {
     width: 100%;
 }
@@ -98,66 +103,60 @@ article h4 {
 .button.gray-button {
   background-color: #d3d3d3;
   color: #48355B;
-  box-shadow: 2px 4px 8px gray;
 }
 
 .button.yellow-button {
   background-color: #cde137;
   color: #48355B;
-  box-shadow: 2px 4px 8px gray;
 }
 
 .button.lightblue-button {
   background-color: #00b7f7;
   color: #48355B;
-  box-shadow: 2px 4px 8px gray;
 }
 
 .button.darkblue-button {
   background-color: #52e8d5;
   color: #48355B;
-  box-shadow: 2px 4px 8px gray;
 }
 
 .button.blue-button {
   background-color: #688eff;
   color: #48355B;
-  box-shadow: 2px 4px 8px gray;
 }
 
 .button.green-button {
   background-color: #32d8a9;
   color: #48355B;
-  box-shadow: 2px 4px 8px gray;
 }
 
 .button.orange-button {
   background-color: #f29422;
   color: #48355B;
-  box-shadow: 2px 4px 8px gray;
 }
 
 .button.red-button {
   background-color: #c57df4;
   color: #48355B;
-  box-shadow: 2px 4px 8px gray;
 }
 
 .button.purple-button {
   background-color: #ff52d4;
   color: #48355B;
-  box-shadow: 2px 4px 8px gray;
 }
 
 .button.brown-button {
   background-color: #fa6a6a;
   color: #48355B;
-  box-shadow: 2px 4px 8px gray;
 }
 
 .button.darkgreen-button {
   background-color: #2EC4B6;
   color: #48355B;
+}
+
+.button.shadow-button {
+  -webkit-box-shadow: 2px 4px 8px gray;
   box-shadow: 2px 4px 8px gray;
 }
 
