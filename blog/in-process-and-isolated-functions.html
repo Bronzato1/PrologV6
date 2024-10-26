@@ -88,7 +88,7 @@
 
                             <p>
                                 To better understand the main difference it's important to know that there's something
-                                called the <strong>Function Host</strong>. The host is the process responsible for
+                                called the <strong><mark class="yellow">Function Host</mark></strong>. The host is the process responsible for
                                 executing functions. It invokes functions based on messages on a queue, timed functions,
                                 and other ways of triggering functions. The In-process model executed functions in the
                                 same process as the host itself. The Isolated model splits things up. It still have a
@@ -140,7 +140,7 @@
 
                             <p>
                                 To better explain the steps needed to migrate, let's take a look at a simple function
-                                app using the In-process model. The first file is the <strong>Startup.cs</strong> file:
+                                app using the In-process model. The first file is the <strong><mark class="green">Startup.cs</mark></strong> file:
                             </p>
 
                             <pre>
@@ -162,7 +162,7 @@
                 });
 
     #pragma warning disable CS0618 // Type or member is obsolete
-                builder.Services.AddSingleton&lt;IFunctionFilter, MyExceptionFilter>();
+                builder.Services.AddSingleton&lt;<mark class="blue">IFunctionFilter</mark>, MyExceptionFilter>();
     #pragma warning restore CS0618 // Type or member is obsolete
             }
         }
@@ -175,7 +175,7 @@
                             <p>
                                 This file set up a singleton as well as add logging using
                                 <code>Microsoft.Extensions.Logging</code>. In the last line of the method, it set up a
-                                <code>IFunctionFilter</code> to catch and handle exceptions. Filters are similar to
+                                <mark class="blue">IFunctionFilter</mark> to catch and handle exceptions. Filters are similar to
                                 middleware but in many ways match Action Filters from ASP.NET MVC more. The
                                 <code>#pragma</code> declaration is there to ignore the warning about using obsolete
                                 code by using <code>IFunctionFilter</code>. The decision to declaring
@@ -243,7 +243,7 @@
 
                             <p>
                                 When you want to move from the in-process Azure function to the isolated Azure function,
-                                another thing you need to do is set the <strong>OutputType</strong> property in your
+                                the thirst thing you need to do is set the <strong>OutputType</strong> property in your
                                 .csproj file to <mark class="green">Exe</mark>.
                                 <br />
                                 <br />
@@ -282,12 +282,12 @@
 
                             <h3>Create the C# configuration</h3>
 
-                            <p>Create a new file named Program.cs and include the following skeleton:</p>
+                            <p>Create a new file named <strong>Program.cs</strong> and include the following skeleton:</p>
 
                             <pre>
                                 <code>
     var host = new HostBuilder()
-        .ConfigureFunctionsWorkerDefaults((context, app) =>
+        .ConfigureFunctionsWebApplication((context, app) =>
         {
         })
         .ConfigureServices(services =>
@@ -307,7 +307,8 @@
                                 I'm using top-level statements but you can declare the full namespace and class if you
                                 prefer that syntax.
                                 <br />
-                                The lines from the Startup.cs file can be copy pasted into Program.cs:
+                                <br />
+                                The lines from the <strong>Startup.cs</strong> file can be copy pasted into <strong>Program.cs</strong>:
                             </p>
 
                             <pre>
@@ -347,7 +348,7 @@
 
                             <h3>Update the function class</h3>
 
-                            <p>The final thing missing is the function class itself. In this example, the My</p>
+                            <p>The final thing missing is the function class itself.</p>
 
                             <pre>
                                 <code>

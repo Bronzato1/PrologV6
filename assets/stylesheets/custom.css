@@ -456,3 +456,7 @@ mark.green {
 mark.blue {
   background-color: rgb(228, 228, 255);
 }
+
+mark.yellow {
+  background-color: #fff3d9;
+}
