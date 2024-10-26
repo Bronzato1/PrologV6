@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta class="foundation-mq">
+    <meta name="google-site-verification" content="">
+    <meta name="theme-color" content="#48355B">
+    <title>Blog | Prolog.Red</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicons//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#48355B">
+    <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+    <link rel="stylesheet" href="../assets/stylesheets/style-min.css">
+    <link rel="stylesheet" href="../assets/stylesheets/custom.css">
+</head>
+
+<body class="animate-in">
+    <div id="inner-page">
+        <!-- Background Stars-->
+        <div class="bg">
+            <div class="stars"><img class="animated infinite flash" src="../assets/images/illustrations/stars-inner.svg"
+                    alt="stars background"></div>
+        </div>
+        <!-- Single App-->
+        <div id="single-app">
+            <div class="row">
+                <div class="small-16 columns">
+                    <!-- Start App Card-->
+                    <article class="card"><a class="back-button" href="../index.html#apps"><img
+                                src="../assets/images/icons/icon-close.svg" alt="go back"></a>
+                        <header>
+                            <h1 class="text-center uppercase">In-process And Isolated Functions</h1>
+                        </header>
+                        <div>
+
+                            <div class="warning callout" data-closable="fade-out">
+                                <p>
+                                    The <strong>In-process</strong> model of running Azure Functions is being retired in
+                                    favor of the <strong>Isolated</strong> model. In this post, I'll share some tips to
+                                    help you migrate from in-process to out of process (isolated).
+                                </p>
+
+                                <button class="close-button" aria-label="Dismiss alert" type="button"
+                                    data-close=""><span aria-hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                            viewBox="0 0 3.44 3.44">
+                                            <path fill="#000" fill-rule="evenodd"
+                                                d="M3.23.59L2.096 1.717 3.23 2.85c.103.104.103.273 0 .38-.106.102-.274.102-.38 0L1.72 2.096.588 3.23c-.104.102-.273.102-.377 0-.102-.107-.102-.276 0-.38l1.134-1.13L.21.588C.108.484.108.315.21.21.316.107.485.107.59.21l1.13 1.133L2.85.21c.106-.103.274-.103.38 0 .103.104.103.273 0 .38z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></span>
+                                </button>
+                            </div>
+
+                            <h3>Functions support two process models:</h3>
+
+                            <ul>
+                                <li>
+                                    <strong>In-Process</strong> - Azure Functions host is the runtime for .NET
+                                    functions. Before .NET 5, C# function apps ran in the same process as the host.
+                                    Sharing a process has enabled unique benefits to .NET functions, most notably a set
+                                    of rich bindings and SDK injections. However, as a side effect, dependencies could
+                                    conflict (like Newtonsoft.Json) and running in the same process also means that the
+                                    .NET version of the user code must match the .NET version of the host.
+                                </li>
+                                <li>
+                                    <strong>Out Of Process (Isolated)</strong> - Out of process is running functions as
+                                    an isolated process from the main Azure Functions host. This allows Azure Functions
+                                    to rapidly support new versions of these languages without updating the host, and it
+                                    allows the host to evolve independently to enable new features and update its
+                                    dependencies over time.
+                                </li>
+                            </ul>
+
+                            <p>
+                                To better understand the main difference it's important to know that there's something
+                                called the <strong>Function Host</strong>. The host is the process responsible for
+                                executing functions. It invokes functions based on messages on a queue, timed functions,
+                                and other ways of triggering functions. The In-process model executed functions in the
+                                same process as the host itself. The Isolated model splits things up. It still have a
+                                host, but functions are executed in processes different from the process running the
+                                host.
+                            </p>
+
+                            <br />
+
+                            <div class="success callout" data-closable="fade-out">
+                                <h4>Benefits of an isolated worker process:</h4>
+                                <br />
+                                <ul>
+                                    <li>
+                                        <strong>Fewer conflicts:</strong> Because your functions run in a separate
+                                        process, assemblies used in your app don't conflict with different versions of
+                                        the same assemblies used by the host process.
+                                    </li>
+                                    <li>
+                                        <strong>Full control of the process:</strong> You control the start-up of the
+                                        app, which means that you can manage the configurations used and the middleware
+                                        started.
+                                    </li>
+                                    <li>
+                                        <strong>Standard dependency injection:</strong> Because you have full control of
+                                        the process, you can use current .NET behaviors for dependency injection and
+                                        incorporating middleware into your function app.
+                                    </li>
+                                    <li>
+                                        <strong>.NET version flexibility:</strong> Running outside of the host process
+                                        means that your functions can run on versions of .NET not natively supported by
+                                        the Functions runtime, including the .NET Framework.
+                                    </li>
+                                </ul>
+
+
+                                <button class="close-button" aria-label="Dismiss alert" type="button"
+                                    data-close=""><span aria-hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                            viewBox="0 0 3.44 3.44">
+                                            <path fill="#000" fill-rule="evenodd"
+                                                d="M3.23.59L2.096 1.717 3.23 2.85c.103.104.103.273 0 .38-.106.102-.274.102-.38 0L1.72 2.096.588 3.23c-.104.102-.273.102-.377 0-.102-.107-.102-.276 0-.38l1.134-1.13L.21.588C.108.484.108.315.21.21.316.107.485.107.59.21l1.13 1.133L2.85.21c.106-.103.274-.103.38 0 .103.104.103.273 0 .38z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></span>
+                                </button>
+                            </div>
+
+                            <h3>Migration steps: move from in-process to isolated function</h3>
+
+                            <p>
+                                To better explain the steps needed to migrate, let's take a look at a simple function
+                                app using the In-process model. The first file is the <strong>Startup.cs</strong> file:
+                            </p>
+
+                            <pre>
+                                <code>
+    [assembly: FunctionsStartup(typeof(MyFunctionApp.Startup))]
+
+    namespace MyFunctionApp
+    {
+        public class Startup : <mark class="red">FunctionsStartup</mark>
+        {
+            public override void <mark class="green">Configure</mark>(IFunctionsHostBuilder builder)
+            {
+                var dependency = new MyDependency();
+                builder.Services.AddSingleton<IMyDependency>(dependeny);
+
+                builder.Services.AddLogging(logging =>
+                {
+                    logging.AddConsole();
+                });
+
+    #pragma warning disable CS0618 // Type or member is obsolete
+                builder.Services.AddSingleton&lt;IFunctionFilter, MyExceptionFilter>();
+    #pragma warning restore CS0618 // Type or member is obsolete
+            }
+        }
+    }
+    </code>
+</pre>
+
+                            <br />
+
+                            <p>
+                                This file set up a singleton as well as add logging using
+                                <code>Microsoft.Extensions.Logging</code>. In the last line of the method, it set up a
+                                <code>IFunctionFilter</code> to catch and handle exceptions. Filters are similar to
+                                middleware but in many ways match Action Filters from ASP.NET MVC more. The
+                                <code>#pragma</code> declaration is there to ignore the warning about using obsolete
+                                code by using <code>IFunctionFilter</code>. The decision to declaring
+                                <code>IFunctionFilter</code> has also felt weird since there has been no alternative.
+                            </p>
+
+                            <p>
+                                Next is the function itself. In this example a timed function:
+                            </p>
+
+                            <pre>
+    <code>
+    namespace MyFunctionApp
+    {
+        public class MyFunction
+        {
+            private readonly IMyDependency myDependency;
+
+            public UptimeChecker(IMyDependency myDependency)
+            {
+                this.myDependency = myDependency;
+            }
+
+            [FunctionName("MyFunction")]
+            public async Task Run([<mark class="blue">TimerTrigger</mark>("0 */5 * * * *")]TimerInfo myTimer, ILogger log)
+            {
+                // Execute
+            }
+        }
+    }
+    </code>
+</pre>
+
+                            <br />
+
+                            <p>
+                                Finally, there's the csproj file:
+                            </p>
+
+                            <pre>
+    <code>
+    &lt;Project Sdk="Microsoft.NET.Sdk">
+        &lt;PropertyGroup>
+            &lt;TargetFramework>net6.0&lt;/TargetFramework>
+            &lt;AzureFunctionsVersion>v4&lt;/AzureFunctionsVersion>
+        &lt;/PropertyGroup>
+        &lt;ItemGroup>
+            &lt;PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.2.0" />
+            &lt;PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
+        &lt;/ItemGroup>
+        &lt;ItemGroup>
+            &lt;None Update="host.json">
+                &lt;CopyToOutputDirectory>PreserveNewest&lt;/CopyToOutputDirectory>
+            &lt;/None>
+            &lt;None Update="local.settings.json">
+                &lt;CopyToOutputDirectory>PreserveNewest&lt;/CopyToOutputDirectory>
+                &lt;CopyToPublishDirectory>Never&lt;/CopyToPublishDirectory>
+            &lt;/None>
+        &lt;/ItemGroup>
+    &lt;/Project>
+</code>
+</pre>
+
+                            <br />
+
+                            <p>
+                                When you want to move from the in-process Azure function to the isolated Azure function,
+                                another thing you need to do is set the <strong>OutputType</strong> property in your
+                                .csproj file to <mark class="green">Exe</mark>.
+                                <br />
+                                <br />
+                                Then, change your <strong>FUNCTIONS_WORKER_RUNTIME</strong> app setting in
+                                <i>local.settings.json</i> from <mark class="red">dotnet</mark> to <mark class="green">dotnet-isolated</mark>.
+                            </p>
+
+                            <hr class="thick" />
+
+                            <h3>Replace NuGet packages</h3>
+
+                            <p>
+                                The Isolated model has a whole new set of NuGet packages. This means that the
+                                <code>Microsoft.NET.Sdk.Functions</code> and
+                                <code>Microsoft.Azure.Functions.Extensions</code> packages in the csproj file needs to
+                                be replaced with these:
+                            </p>
+
+                            <pre>
+                                <code>
+    &lt;PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.10.0" />
+    &lt;PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Timer" Version="4.0.1" />
+    &lt;PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.7.0" /></code>
+                            </pre>
+
+                            <br />
+
+                            <p>
+                                The <mark class="blue">Worker</mark> and <mark class="blue">Worker.Sdk</mark> packages are required. Depending on your function trigger, you
+                                need to include one or more packages containing the trigger. In this example, I'm using
+                                the timed trigger which requires the Microsoft.Azure.Functions.Worker.Extensions.Timer
+                                package. There are other packages like Microsoft.Azure.Functions.Worker.Extensions.Http
+                                for HTTP-based triggers and Microsoft.Azure.Functions.Worker.Extensions.ServiceBus for
+                                Service Bus-based triggers.
+                            </p>
+
+                            <h3>Create the C# configuration</h3>
+
+                            <p>Create a new file named Program.cs and include the following skeleton:</p>
+
+                            <pre>
+                                <code>
+    var host = new HostBuilder()
+        .ConfigureFunctionsWorkerDefaults((context, app) =>
+        {
+        })
+        .ConfigureServices(services =>
+        {
+        })
+        .ConfigureLogging(logging =>
+        {
+        })
+        .Build();
+
+    host.Run();</code>
+                            </pre>
+
+                            <br/>
+
+                            <p>
+                                I'm using top-level statements but you can declare the full namespace and class if you
+                                prefer that syntax.
+                                <br />
+                                The lines from the Startup.cs file can be copy pasted into Program.cs:
+                            </p>
+
+                            <pre>
+                                <code>
+    var host = new HostBuilder()
+        .ConfigureFunctionsWorkerDefaults((context, app) =>
+        {
+            app.UseMiddleware<MyExceptionMiddleware>();
+        })
+        .ConfigureServices(services =>
+        {
+            var dependency = new MyDependency();
+            services.AddSingleton<IMyDependency>(dependency);
+        })
+        .ConfigureLogging(logging =>
+        {
+            logging.AddConsole();
+        })
+        .Build();</code>
+                            </pre>
+
+                            <br />
+
+                            <p>
+                                The <mark class="green">MyExceptionFilter</mark> class has been migrated to middleware. There are numerous examples
+                                of how to create middleware in Azure Functions already, so I won't go into more detail
+                                on this here. The important thing to notice is that the class is added using the
+                                <strong>UseMiddleware</strong> method. This should look familiar if you already know ASP.NET Core.
+                                <br/>
+                                <br/>
+                                The dependency is injected into the ConfigureServices method and the logging is set up
+                                in the ConfigureLogging method.
+                                <br />
+                                <br />
+                                When all of the code is moved, the Startup.cs file can be deleted.
+                            </p>
+
+                            <h3>Update the function class</h3>
+
+                            <p>The final thing missing is the function class itself. In this example, the My</p>
+
+                            <pre>
+                                <code>
+    namespace MyFunctionApp
+    {
+        public class MyFunction(IMyDependency myDependency, ILogger<MyFunction> logger)
+        {
+            private readonly IMyDependency myDependency = myDependency;
+            private readonly ILogger<MyFunction> logger = logger;
+
+            [Function("MyFunction")]
+            public async Task Run([TimerTrigger("0 */5 * * * *")]TimerInfo myTimer)
+            {
+                // Execute
+            }
+        }
+    }</code>
+                            </pre>
+
+                            <br />
+
+                            <p>
+                                I made a few changes here, besides migrating the code to use a primary constructor. I've
+                                changed the injected ILogger in the Run method to a constructor-injected generic logger.
+                                Your In-process function may already use this approach so there might not be anything to
+                                change there. The second change is to replace the FunctionName attribute with the
+                                Function attribute. When doing this you will need to using Microsoft.Azure.WebJobs; and
+                                adding using Microsoft.Azure.Functions.Worker; instead.
+                                <br />
+                                That's it! Hit F5 and see your "new" Isolated function app in action.
+                            </p>
+
+                        </div>
+                        <footer>
+                            <div class="text-center">
+                                <a class="button hollow-button tiny-button" data-open="modal-azure-functions">Azure
+                                    Functions</a>
+                                <a class="button hollow-button tiny-button" data-open="modal-in-process">In-process</a>
+                                <a class="button hollow-button tiny-button" data-open="modal-out-of-process">Out of
+                                    process</a>
+                                <a class="button hollow-button tiny-button" data-open="modal-isolated">Isolated</a>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="copyright">
+            <div class="row">
+                <div class="small-16 columns">
+                    <p class="text-center copy">Copyright &copy; <span class="date"> </span> <a href="#/">Prolog.Red</a>
+                        </span> <img src="../assets/images/icons/icon-rocket.svg" alt=""></span><span
+                            class="hide-on-mobile"> All Rights Reserved</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/app-min.js"></script>
+    <script src="../assets/js/functions.js"></script>
+    <script>
+        // body fade in-out
+        window.addEventListener("beforeunload", function () {
+            document.body.classList.add("animate-out");
+        });
+    </script>
+</body>
+
+</html>

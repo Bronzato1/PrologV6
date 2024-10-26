@@ -15,7 +15,7 @@ article h3 {
 
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
   font-family: "CarterOne", "Raleway", Arial, sans-serif;
-  color: #48355B;
+  color: inherit;
 }
 
 #main-footer.purple {
@@ -189,6 +189,10 @@ article h4 {
 
 hr.spacer {
   border: 3px solid rgba(255, 255, 255, 0);
+}
+
+hr.thick {
+  border: 2px solid #48355B;
 }
 
 .tiny-button {
@@ -419,6 +423,36 @@ html {
 .callout.success .close-button {
   background-color: #E1FAEA;
 }
+.callout.warning .close-button {
+  background-color: #FFF3D9;
+}
 .callout.alert .close-button {
   background-color: #FBE1E1;
+}
+
+pre {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+code {
+  border: none;
+  background-color: #f1f1f1;
+}
+
+mark {
+  border-radius: 5px;
+  padding: 2px 4px;
+}
+
+mark.red {
+  background-color: #f8e2e2;
+}
+
+mark.green {
+  background-color: rgb(221, 255, 221);
+}
+
+mark.blue {
+  background-color: rgb(228, 228, 255);
 }
